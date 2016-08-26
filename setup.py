@@ -6,4 +6,6 @@ setup(name="datadog-logger",
       description="Python logging handler for DataDog events",
       url="https://github.com/ustudio/datadog-logger",
       packages=["datadog_logger"],
-      install_requires=["datadog"])
+      install_requires=["datadog"],
+      extras_require={"celery": ["celery"]}
+)
